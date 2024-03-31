@@ -2,7 +2,7 @@ contribution:
 https://carpentries-incubator.github.io/python-text-analysis/
 # NLP Pipline
 
-![alt text](data\images\NLP-Pipeline-GIF.gif)
+![alt text](./data/images/NLP-Pipeline-GIF.gif)
 
 Text Analysis, also known as Natural Language Processing or NLP, is a subdiscipline of the larger disciplines of machine learning and artificial intelligence.
 
