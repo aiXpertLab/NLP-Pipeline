@@ -9,6 +9,9 @@ st_text_cleaning_contents()
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
+from nltk import download
+
+download("stopwords")
 
 def _create_dictionary_table(text_string) -> dict:
     stop_words = set(stopwords.words("english"))    # Removing stop words
@@ -32,7 +35,8 @@ def main():
         with st.spinner("data loading..."):
             # txt_string = txt_obj.getvalue().decode("utf-8")
             frequency_table = _create_dictionary_table(text_string=txt_string)     # Creating a dictionary for the word frequency table
-            
+        
+        st.write("data loaded")            
         if 'article_content' not in st.session_state:   st.session_state['article_content'] = ''
         st.session_state['frequency_table'] = frequency_table
         st.table(frequency_table)
