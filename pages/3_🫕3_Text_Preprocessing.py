@@ -36,7 +36,6 @@ def main():
         if 'article_content' not in st.session_state:   st.session_state['article_content'] = ''
         st.session_state['frequency_table'] = frequency_table
         st.table(frequency_table)
-        print(frequency_table)
 
 if __name__ == "__main__":
     main()
