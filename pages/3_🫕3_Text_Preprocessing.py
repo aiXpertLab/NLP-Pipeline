@@ -12,6 +12,9 @@ from nltk.tokenize import word_tokenize
 from nltk import download
 
 download("stopwords")
+download('punkt')
+download("wordnet")
+download("averaged_perceptron_tagger")
 
 def _create_dictionary_table(text_string) -> dict:
     stop_words = set(stopwords.words("english"))    # Removing stop words
