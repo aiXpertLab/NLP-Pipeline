@@ -1,7 +1,6 @@
 #   st.session_state['article_content'] = article_content
 
 import streamlit as st
-from utils.utilities import get_products, aichat
 from utils.st_def import st_logo, st_data_acquisition_contents
 
 st_logo("Welcome 👋 to Data Acquisition!", "Data Acquisition")

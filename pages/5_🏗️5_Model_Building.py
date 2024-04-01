@@ -1,17 +1,13 @@
-from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize import word_tokenize
 
-import streamlit as st, urllib
-from utils.utilities import get_products, aichat
+import streamlit as st
 from utils.st_def import st_logo, st_case_study
 
 st_logo(title = "Welcome 👋 to Model Buiding!", page_title="Build it up",)
 st_case_study()
 
 from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
-from nltk.tokenize import word_tokenize, sent_tokenize
-import bs4 as BeautifulSoup
-import urllib.request  
+from nltk.tokenize import word_tokenize
 
 # Step 4: Finding the weighted frequencies of the sentences
 # To evaluate the score for every sentence in the text, we’ll be analyzing the frequency of occurrence of each term. 

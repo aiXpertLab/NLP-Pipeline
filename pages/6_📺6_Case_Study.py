@@ -1,7 +1,4 @@
-from nltk.tokenize import word_tokenize, sent_tokenize
-
-import streamlit as st, urllib
-from utils.utilities import get_products, aichat
+import streamlit as st
 from utils.st_def import st_logo, st_case_study
 
 st_logo(title = "Welcome 👋 to Wrap up!", page_title="Case Study",)

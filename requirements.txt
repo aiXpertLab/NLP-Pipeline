@@ -1,0 +1,6 @@
+streamlit
+streamlit_extras
+beautifulsoup4
+pandas
+nltk
+Requests
